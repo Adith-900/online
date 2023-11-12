@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giftopia</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slideshow-content {
+            display: flex;
+            animation: marquee 20s linear infinite;
+        }
+
+        .slide {
+            width: 100%;
+        }
+
+        
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Add additional styling as needed */
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .our {
+            font-size: 2.2rem;
+            color: #2196f3;
+            border: 0.5px solid #ddd;
+            text-align: center;
+            background: #eceff1;
+            max-width: 640px;
+            margin: auto ;
+            border-bottom: 0 solid white;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 38px;
+            word-spacing: 4px;
+            letter-spacing: 3px;
+            box-shadow: 0 5px 20px #ddd;
+        }
+
+        h2 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(21, 151, 151);
+         }            
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Giftopia</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Giftopia!</h2><br>
+        <p>Gift the extraordinary! Our shop is a treasure trove of thoughtful surprises and delightful finds. Because every occasion deserves a touch of wonder. Explore the art of giving at Giftopia where every gift is a masterpiece!</p><br>
+        <p>Find the perfect gift for every occasion.</p>
+    </section>
+
+    <section id="products" >
+        <h2  class="our">Our Products</h2><br>
+        <h3 style="text-align: center;"> Frames</h3><br>
+
+        <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list">
+                <img src="fram-1.jpg" alt="Image 1" height="300px" width="300px">
+                <img src="fram-2.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="fram-3.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="fram-4.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="fram-5.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="fram-6.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="fram-7.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="fram-8.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="fram-9.jpg" alt="Image 2" height="300px" width="300px">
+                
+                
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+              chevron_right
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <h3 style="text-align: center;">Wooden Frames</h3><br>
+
+        <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list">
+                <img src="wd-1.jpg" alt="Image 1" height="300px" width="300px">
+                <img src="Wd-2.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-3.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-4.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-5.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-6.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-7.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-8.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-9.jpg" alt="Image 2" height="300px" width="300px">
+                <img src="wd-10.jpg" alt="Image 2" height="300px" width="300px">
+                
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+              chevron_right
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+
+        
+
+            
+
+        
+        <!-- Add more product entries as needed -->
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: yourgiftshop@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Giftopia</p>
+    </footer>
+
+</body>
+</html>
